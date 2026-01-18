@@ -23,7 +23,7 @@ v1.0 (2026-01-17)
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from .models import Base
+from models import Base
 
 # 从环境变量读取数据库 URL，默认为本地 SQLite
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./licenses.db")

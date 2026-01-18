@@ -25,8 +25,8 @@ from datetime import date, timedelta
 import uuid
 from typing import Optional
 
-from .database import SessionLocal, init_db
-from .models import License
+from database import SessionLocal, init_db
+from models import License
 
 # 初始化 FastAPI 应用
 app = FastAPI(title="License Verification Server", version="1.0.0")
