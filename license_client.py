@@ -52,8 +52,11 @@ def get_machine_code() -> str:
 class LicenseClient:
     """激活码验证客户端类"""
     
-    # API 服务器地址（本地测试用）
-    API_URL = "http://127.0.0.1:8000"
+    # API 服务器地址（云端生产环境）
+    API_URL = "https://license-verification-server-2efe.onrender.com"
+    
+    # API 服务器地址（本地测试用 - 已注释）
+    # API_URL = "http://127.0.0.1:8000"
     
     # 请求超时时间（秒）
     TIMEOUT = 10
